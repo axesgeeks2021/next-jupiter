@@ -1383,7 +1383,7 @@ footer{
   }
   .jumbo-bg.jumbo-bg-blue::before {
     /* background-color: #009abc; */
-    /* background-image: url(../../public/australia.webp);
+    /* background-image: url(../../../public/australia.webp);
     background-repeat: no-repeat;
     background-size: cover; */
   }
@@ -1391,37 +1391,37 @@ footer{
     background-color: #006c91;
   }
   .jumbo-bg.jumbo-bg-pathway.first::before{
-    background: url(../../public/studyinaustralia1.webp);
+    background: url(../../../public/studyinaustralia1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100%;
   }
   .jumbo-bg.jumbo-bg-pathway.second::before{
-    background: url(../../public/studyinuk1.webp);
+    background: url(../../../public/studyinuk1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 10%;
   }
   .jumbo-bg.jumbo-bg-pathway.third::before{
-    background: url(../../public/studyingincanada1.webp);
+    background: url(../../../public/studyingincanada1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 10%;
   }
   .jumbo-bg.jumbo-bg-pathway.forth::before{
-    background: url(../../public/visitingincanada1.webp);
+    background: url(../../../public/visitingincanada1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 10%;
   }
   .jumbo-bg.jumbo-bg-pathway.fifth::before{
-    background: url(../../public/visitinginuk1.webp);
+    background: url(../../../public/visitinginuk1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 10%;
   }
   .jumbo-bg.jumbo-bg-pathway.sixth::before{
-    background: url(../../public/visitinginaustralia1.webp);
+    background: url(../../../public/visitinginaustralia1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 10%;
@@ -1446,43 +1446,43 @@ footer{
   }
   @media (min-width: 992px) {
     .jumbo-bg.jumbo-bg-pathway.first::after{
-      background: url(../../public/studyinaustralia1.webp);
+      background: url(../../../public/studyinaustralia1.webp);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 100%;
     }
     .jumbo-bg.jumbo-bg-pathway.second::after{
-      background: url(../../public/studyinuk1.webp);
+      background: url(../../../public/studyinuk1.webp);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 10%;
     }
     .jumbo-bg.jumbo-bg-pathway.third::after{
-      background: url(../../public/studyingincanada1.webp);
+      background: url(../../../public/studyingincanada1.webp);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 10%;
     }
     .jumbo-bg.jumbo-bg-pathway.forth::after{
-      background: url(../../public/visitingincanada1.webp);
+      background: url(../../../public/visitingincanada1.webp);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 10%;
     }
     .jumbo-bg.jumbo-bg-pathway.fifth::after{
-      background: url(../../public/visitinginuk1.webp);
+      background: url(../../../public/visitinginuk1.webp);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 10%;
     }
     .jumbo-bg.jumbo-bg-pathway.sixth::after{
-      background: url(../../public/visitinginaustralia1.webp);
+      background: url(../../../public/visitinginaustralia1.webp);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 10%;
     }
     /* .jumbo-bg.jumbo-bg-pathway::after{
-      background: url(../../public/study\ in\ australia.webp);
+      background: url(../../../public/study\ in\ australia.webp);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 10%;

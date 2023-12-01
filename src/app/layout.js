@@ -1,5 +1,5 @@
 import { Inter } from 'next/font/google'
-import "../styles/style.css"
+import "./styles/style.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Footer from './component/Footer'
 import Header from './component/Header'
