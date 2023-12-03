@@ -8,7 +8,7 @@ const fetchBlogs = async () => {
             redirect: 'follow'
         };
 
-        const res = await fetch("https://www.sankalpitsolutions.com/jupiter/api/blog_list.php", requestOptions)
+        const res = await fetch("http://www.sankalpitsolutions.com/jupiter/api/blog_list.php", requestOptions)
         const data = await res.json()
         return data
 

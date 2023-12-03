@@ -7,7 +7,7 @@ const fetchTestimonial = async () => {
             redirect: 'follow'
         };
 
-        const result = await fetch("https://www.sankalpitsolutions.com/jupiter/api/testimonials.php", requestOptions)
+        const result = await fetch("http://www.sankalpitsolutions.com/jupiter/api/testimonials.php", requestOptions)
         const data = await result.json()
         return data
     } catch (error) {
