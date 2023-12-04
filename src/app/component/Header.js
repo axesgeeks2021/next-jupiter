@@ -302,11 +302,11 @@ function Header() {
                     </div>
                 </div>
                 <div className="sec-center">
-                    <Link onClick={() => setShowMobileMenu(false)} href="/blogs" style={{ padding: "0", margin: "0", paddingLeft: "16px" }}><label
+                    <Link onClick={() => setShowMobileMenu(false)} href="/blogs" style={{ padding: "0", margin: "0", paddingLeft: "16px", color: "#102770", display: 'flex', justifyContent: "center", alignItems: 'center', letterSpacing: '1px' }}><label
                         className="for-dropdown mobile__menu__blog" htmlFor="blogs">Blogs</label></Link>
                 </div>
                 <div className="sec-center">
-                    <Link onClick={() => setShowMobileMenu(false)} href="/testimonials" style={{ padding: "0", margin: "0", paddingLeft: "16px" }}><label
+                    <Link onClick={() => setShowMobileMenu(false)} href="/testimonials" style={{ padding: "0", margin: "0", paddingLeft: "16px", color: "#102770", display: 'flex', justifyContent: "center", alignItems: 'center', letterSpacing: '1px' }}><label
                         className="for-dropdown mobile__menu__blog" htmlFor="blogs">Testimonials</label></Link>
                 </div>
             </div>

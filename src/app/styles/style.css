@@ -410,9 +410,12 @@ header {
 /* dropdown menu */
 .mobile__menu .sec-center {
     position: relative;
-    max-width: 100%;
+    max-width: 90%;
     text-align: center;
-    margin: 10px 0;
+    margin: 10px auto;
+    background-color: #ffeba7;
+    padding: 10px 0;
+    border-radius: 5px;
     /* z-index: -1; */
 }
 
@@ -520,7 +523,7 @@ header {
     font-weight: 500;
     font-size: 15px;
     line-height: 2;
-    height: 50px;
+    /* height: 50px; */
     transition: all 200ms linear;
     border-radius: 4px;
     width: 220px;
