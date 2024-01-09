@@ -155,7 +155,7 @@ async function page() {
             helping you turn your dreams of international education into a reality.</p>
 
           <p><b>Location:</b> S.C.O 64–65 First Floor, Sector 17A Sector 17, Chandigarh,160017</p>
-          <p><b>Phone:</b> <a href="tel:+91 9143333305">+91 9143333305</a>&nbsp;&nbsp;&nbsp;<a href="tel:+91 9143333306">+91 9143333306</a>&nbsp;&nbsp;&nbsp;<a href="tel:+91 9501115113">+91 9501115113</a></p>
+          <p><b>Phone:</b> <a href="tel:+91 9464280970">+91 9464280970</a>&nbsp;&nbsp;&nbsp;<a href="tel:+91 9143333305">+91 9143333305</a>&nbsp;&nbsp;&nbsp;<a href="tel:0172-4636809">0172-4636809</a></p>
           <p><b>Email:</b> <a href="mailto:info@jupiterconsultants.in">info@jupiterconsultants.in</a></p>
           <p><b>Office Hours:</b> Mon-Sat 10:00 am to 06:00 pm</p>
 

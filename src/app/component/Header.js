@@ -1,6 +1,6 @@
 "use client"
 import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { faBars, faLocationDot, faPlus, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faHome, faLocationDot, faPlus, faUser } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -154,9 +154,9 @@ function Header() {
                 <div className='address'>
                     <p style={{ color: '#909090', fontSize: '17px' }}>S.C.O 64–65 First Floor, Sector 17A Sector 17, Chandigarh,160017</p>
                     <div className='header__address__anchor' >
+                        <a href='tel:+919464280970' style={{ color: '#909090', textDecoration: 'none', fontSize: '16px' }}>+91 9464280970</a>
                         <a href='tel:+919143333305' style={{ color: '#909090', textDecoration: 'none', fontSize: '16px' }}>+91 9143333305</a>
-                        <a href='tel:+919143333306' style={{ color: '#909090', textDecoration: 'none', fontSize: '16px' }}>+91 9143333306</a>
-                        <a href='tel:+919501115113' style={{ color: '#909090', textDecoration: 'none', fontSize: '16px' }}>+91 9501115113</a>
+                        <a href='tel:0172-4636809' style={{ color: '#909090', textDecoration: 'none', fontSize: '16px' }}>0172-4636809</a>
                     </div>
                 </div>
                 <div className='header__button'>
@@ -171,16 +171,21 @@ function Header() {
                 </div>
             </div>
             <div className='header__address__anchor mobile__display__anchor' >
+                <Link href='tel:+919464280970' style={{ color: '#909090', textDecoration: 'none', fontSize: '16px' }}>+91 9464280970</Link>
                 <Link href='tel:+919143333305' style={{ color: '#909090', textDecoration: 'none', fontSize: '16px' }}>+91 9143333305</Link>
-                <Link href='tel:+919143333306' style={{ color: '#909090', textDecoration: 'none', fontSize: '16px' }}>+91 9143333306</Link>
-                <Link href='tel:+919501115113' style={{ color: '#909090', textDecoration: 'none', fontSize: '16px' }}>+91 9501115113</Link>
+                <Link href='tel:0172-4636809' style={{ color: '#909090', textDecoration: 'none', fontSize: '16px' }}>0172-4636809</Link>
             </div>
             <div className='bottom__navbar'>
                 <div className='navbar__menu'>
                     <ul>
                         <li className='hamburger'>
-                            <FontAwesomeIcon icon={faBars} color='#fff' size='2xl' onClick={() => setShowMobileMenu(true)}/>
+                            <FontAwesomeIcon icon={faBars} color='#fff' size='2xl' onClick={() => setShowMobileMenu(true)} />
                         </li>
+                        <Link href="/" style={{ color: "#fff", }} className='home__icon'>
+                            <span className="">
+                                <FontAwesomeIcon icon={faHome} />
+                            </span>
+                        </Link>
                         {
                             headerList.map((ele, idx) => {
                                 return (
@@ -243,12 +248,16 @@ function Header() {
                     style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                     <div className="mobile__menu__img" style={{ width: "70%", margin: "20px 10px" }}>
                         <Image src="/logoc.png" alt="mobile menu website logo"
-                            width={1000} height={100} style={{width: '100%', height: '100%'}}/>
+                            width={1000} height={100} style={{ width: '100%', height: '100%' }} />
                     </div>
                     <div className="close__menu__button"
                         style={{ width: "40%", display: "flex", justifyContent: "flex-end", padding: "0 10px" }}>
                         <FontAwesomeIcon icon={faPlus} style={{ transform: "rotate(45deg)" }} size='2xl' onClick={() => setShowMobileMenu(false)} />
                     </div>
+                </div>
+                <div className="sec-center">
+                    <Link onClick={() => setShowMobileMenu(false)} href="/" style={{ padding: "0", margin: "0", paddingLeft: "16px", color: "#102770", display: 'flex', justifyContent: "center", alignItems: 'center', letterSpacing: '1px' }}><label
+                        className="for-dropdown mobile__menu__blog" htmlFor="blogs">Home</label></Link>
                 </div>
                 <div className="sec-center">
                     <input className="dropdown" type="checkbox" id="dropdown" name="dropdown" />
@@ -257,7 +266,6 @@ function Header() {
                         <Link onClick={() => setShowMobileMenu(false)} href="/about-jupiter">About Jupiter</Link>
                         <Link onClick={() => setShowMobileMenu(false)} href="/guide-to-studying-abroad">Guide To Study Abroad</Link>
                         <Link onClick={() => setShowMobileMenu(false)} href="/study-abroad-benefits">Study Abroad Benefits</Link>
-
                     </div>
                 </div>
                 <div className="sec-center">
@@ -310,7 +318,7 @@ function Header() {
                         className="for-dropdown mobile__menu__blog" htmlFor="blogs">Testimonials</label></Link>
                 </div>
             </div>
-            <PopupForm setShowPopUpForm={setShowPopUpForm} showPopUpForm={showPopUpForm}v/>
+            <PopupForm setShowPopUpForm={setShowPopUpForm} showPopUpForm={showPopUpForm} v />
         </header>
     )
 }

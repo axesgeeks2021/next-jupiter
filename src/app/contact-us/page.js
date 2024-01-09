@@ -24,6 +24,8 @@ function page() {
               <a href='tel:+919143333305'><FontAwesomeIcon icon={faPhone} /> (+91) 9143333305</a>
               <a href='tel:+919143333306'><FontAwesomeIcon icon={faPhone} /> (+91) 9143333306</a>
               <a href='tel:+919501115113'><FontAwesomeIcon icon={faPhone} /> (+91) 9501115113</a>
+              <a href='tel:+919464280970'><FontAwesomeIcon icon={faPhone} /> (+91) 9464280970</a>
+              <a href='tel:0172-4636809'><FontAwesomeIcon icon={faPhone} /> 0172-4636809</a>
               <a href='mailto:info@jupiterconsultants.in'><FontAwesomeIcon icon={faMailBulk} /> info@jupiterconsultants.in</a>
             </div>
           </div>
