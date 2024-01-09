@@ -22,12 +22,12 @@ async function page() {
     return (
         <section className="container-fluid" style={{position: 'relative'}}>
             <h1 style={{ textAlign: "center" }}>Trending Blogs</h1>
-            <div className="card__box"
+            <div className="card__box my-2"
                 >
                 {
                     blogs && blogs.data?.map((ele, idx) => {
                         return (
-                            <Link href={{pathname : ele?.slug}} key={idx} className='blog__card__link'>
+                            <Link href={{pathname : ele?.slug}} key={idx} className='blog__card__link my-2'>
                                 <div className="blog__card" >
                                     <div className="blog__img">
                                         <img src={ele?.image_path} />
