@@ -1217,7 +1217,9 @@ footer{
 
     .mobile__display__anchor {
         display: flex;
+        flex-wrap: wrap;
     }
+    
     .navbar__menu ul li:not(:first-child), .home__icon {
         display: none;
     }
@@ -1281,10 +1283,10 @@ footer{
         width: 75%;
     }
     .mobile__display__anchor{
-        gap: 5px !important;
+        justify-content: space-evenly;
     }
     .mobile__display__anchor a{
-        font-size: 14px !important;
+        font-size: 18px !important;
     }
     .input__box{
         padding: 10px 3px !important;
