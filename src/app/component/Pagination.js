@@ -25,9 +25,9 @@ function Pagination({ nPages, currentPage, setCurrentPage }) {
                 </span>
                 </li>
                 {
-                    pageNumbers.map(ele => {
+                    pageNumbers.map((ele, idx) => {
                         return (
-                            <li key={ele} onClick={() => setCurrentPage(ele)} className={`page__numbers ${currentPage == ele ? 'active' : ''}`}>{ele}</li>
+                            <li key={idx} onClick={() => setCurrentPage(ele)} className={`page__numbers ${currentPage == ele ? 'active' : ''}`}>{ele}</li>
                         )
                     })
                 }
