@@ -1,5 +1,6 @@
-import Link from 'next/link';
+
 import React from 'react'
+import BlogContainer from '../component/BlogContainer';
 
 const fetchBlogs = async () => {
     try {
@@ -21,29 +22,8 @@ async function page() {
     const blogs = await fetchBlogs()
     return (
         <section className="container-fluid" style={{position: 'relative'}}>
-            <h1 style={{ textAlign: "center" }}>Trending Blogs</h1>
-            <div className="card__box my-2"
-                >
-                {
-                    blogs && blogs.data?.map((ele, idx) => {
-                        return (
-                            <Link href={{pathname : ele?.slug}} key={idx} className='blog__card__link my-2'>
-                                <div className="blog__card" >
-                                    <div className="blog__img">
-                                        <img src={ele?.image_path} />
-                                    </div>
-                                    <div className="blog__text" style={{ padding: "10px 10px" }}>
-                                        <h3>{ele?.name}</h3>
-                                        {/*<p style={{ color: "#fff" }}>{ele?.short_desp.replaceAll('&lt;p&gt;', '').replaceAll('&lt;/p&gt;', '')}</p>*/}
-                                        <button >Read More...</button>
-                                    </div>
-                                </div>
-                            </Link>
-                        )
-                    })
-                }
-
-            </div>
+            <h1 style={{ textAlign: "center" }} className='my-3'>Trending Blogs</h1>
+            <BlogContainer blogs={blogs} />
         </section>
     )
 }
