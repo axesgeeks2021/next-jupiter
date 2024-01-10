@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import Pagination from './Pagination';
+import ReactPaginate from 'react-paginate';
 
 function TestimonialContainer({ testimonial }) {
 
@@ -13,6 +14,21 @@ function TestimonialContainer({ testimonial }) {
   const currentRecords = testimonial?.data?.slice(indexOfFirstRecord, indexOfLastRecord);
 
   const nPages = Math.ceil(testimonial?.data?.length / recordsPerPage)
+  const pageNumbers = [...Array(nPages + 1).keys()].slice(1);
+
+  const nextPage = () => {
+    if (currentPage !== nPages) {
+      return setCurrentPage(currentPage + 1)
+    }
+  }
+
+  const prevPage = () => {
+    if (currentPage !== 1) {
+      return setCurrentPage(currentPage - 1)
+    }
+  }
+
+
 
   return (
     <div className="testimonials__container" style={{ width: "100%", display: "flex", justifyContent: "center", padding: "10px 20px", flexDirection: "column" }}>
@@ -33,7 +49,23 @@ function TestimonialContainer({ testimonial }) {
           )
         })
       }
-      <Pagination nPages={nPages} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <ReactPaginate
+          breakLabel="..."
+          pageCount={nPages}
+          pageClassName="page__numbers"
+          pageLinkClassName="page__numbers"
+          previousClassName="page-item"
+          previousLinkClassName="page-link"
+          nextClassName="page-item"
+          nextLinkClassName="page-link"
+          breakClassName="page-item"
+          breakLinkClassName="page-link"
+          containerClassName="pagination__container"
+          activeClassName="page__numbers__active"
+          onPageChange={nextPage}
+        />
+      </div>
     </div>
   )
 }

@@ -1104,13 +1104,15 @@ footer{
     color: var(--white);
 }
 .pagination__container {
-    width: 100%;
+    width: auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background: var(--greyLight-2); */
+    background-color: #eee;
     margin-top: 20px;
+    padding-right: 25px;
+
   }
   
   ul {
@@ -1131,7 +1133,14 @@ footer{
       grid-template-columns: repeat(2, 1fr);
     }
   }
-  
+  .page-link{
+    padding: 4px 10px;
+    border-radius: 2px;
+  }
+  .page-link:hover{
+    color: #fff;
+    background-color: #d13112;
+  }
   .item {
     width: 10rem;
     height: 10rem;
@@ -1180,6 +1189,10 @@ footer{
     margin: 0.8rem;
     font-size: 1.4rem;
     cursor: pointer;
+    color: #000;
+    text-decoration: none;
+    /* color: #fff; */
+    
   }
   .page__dots {
     width: 2.6rem;
@@ -1191,11 +1204,12 @@ footer{
     width: 2.6rem;
     height: 2.6rem;
     border-radius: 0.4rem;
+    
   }
-  .page__numbers:hover {
+  /* .page__numbers:hover {
     color: #d13112;
-  }
-  .page__numbers.active {
+  } */
+  .page__numbers.active, .page__numbers__active {
     color: #ffffff;
     background: #d13112;
     font-weight: 600;
@@ -1204,7 +1218,6 @@ footer{
   .page__btn {
     color: #d13112;
   }
-  
 
   .page__btn.active {
     color: var(--greyDark);
