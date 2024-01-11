@@ -1,13 +1,13 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Pagination from './Pagination';
 import ReactPaginate from 'react-paginate';
 
 function TestimonialContainer({ testimonial }) {
-
+  
   const [currentPage, setCurrentPage] = useState(1);
   const [recordsPerPage] = useState(10);
-
+  
   const indexOfLastRecord = currentPage * recordsPerPage;
   const indexOfFirstRecord = indexOfLastRecord - recordsPerPage;
 
@@ -28,8 +28,7 @@ function TestimonialContainer({ testimonial }) {
     }
   }
 
-
-
+  
   return (
     <div className="testimonials__container" style={{ width: "100%", display: "flex", justifyContent: "center", padding: "10px 20px", flexDirection: "column" }}>
       {
@@ -50,21 +49,23 @@ function TestimonialContainer({ testimonial }) {
         })
       }
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <ReactPaginate
-          breakLabel="..."
-          pageCount={nPages}
-          pageClassName="page__numbers"
-          pageLinkClassName="page__numbers"
-          previousClassName="page-item"
-          previousLinkClassName="page-link"
-          nextClassName="page-item"
-          nextLinkClassName="page-link"
-          breakClassName="page-item"
-          breakLinkClassName="page-link"
-          containerClassName="pagination__container"
-          activeClassName="page__numbers__active"
-          onPageChange={nextPage}
-        />
+          <ReactPaginate
+            breakLabel="..."
+            pageCount={nPages}
+            pageClassName="page__numbers__npm"
+            pageLinkClassName="page__numbers__npm"
+            previousClassName="page-item"
+            previousLinkClassName="page-link"
+            nextClassName="page-item"
+            nextLinkClassName="page-link"
+            breakClassName="page-item"
+            breakLinkClassName="page-link"
+            containerClassName="pagination__container__npm"
+            activeClassName="page__numbers__active"
+            onPageChange={nextPage}
+          />
+          <Pagination currentPage={currentPage} setCurrentPage={setCurrentPage} nPages={nPages} nextPage={nextPage} prevPage={prevPage}/>
+
       </div>
     </div>
   )
