@@ -11,6 +11,7 @@ const fetchBlogs = async () => {
 
         const res = await fetch("http://www.sankalpitsolutions.com/jupiter/api/blog_list.php", requestOptions)
         const data = await res.json()
+        console.log('blog list', data)
         return data
 
     } catch (error) {
