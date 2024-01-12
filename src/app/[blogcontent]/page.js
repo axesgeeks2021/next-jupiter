@@ -21,7 +21,7 @@ async function page(router) {
 
   return (
     <section style={{ width: "100%", padding: "0 20px" }} className="blog__section">
-      <div className="img " style={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+      <div className="img" style={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
         <img src={blogContent?.data?.image_path} style={{ width: "80%", objectFit: "cover" }} className="img-fluid" />
       </div>
       <div className="row my-4 ">

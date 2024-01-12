@@ -4,6 +4,7 @@ import Pagination from './Pagination';
 import Link from 'next/link';
 import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
 
 function BlogContainer({ blogs }) {
 
@@ -12,7 +13,6 @@ function BlogContainer({ blogs }) {
 
     const indexOfLastRecord = currentPage * recordsPerPage;
     const indexOfFirstRecord = indexOfLastRecord - recordsPerPage;
-
 
     const currentRecords = blogs?.data?.slice(indexOfFirstRecord, indexOfLastRecord);
 
@@ -42,7 +42,7 @@ function BlogContainer({ blogs }) {
                             <Link href={{ pathname: ele?.slug }} key={idx} className='blog__card__link my-4'>
                                 <div className="blog__card" >
                                     <div className="blog__img">
-                                        <img src={ele?.image_path} />
+                                        <Image src={ele?.image_path} width={1000} height={1000}/>
                                     </div>
                                     <div className="blog__text" style={{ padding: "10px 10px" }}>
                                         <h3>{ele?.name}</h3>
